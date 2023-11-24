@@ -7,14 +7,14 @@ def main():
 
     transaction = {
         "time": time,
-        "sender": "C-san",
-        "receiver": "D-san",
-        "amount": 222,
-        "description": "YYY Project Expenses",
+        "sender": "A-san",
+        "receiver": "B-san",
+        "amount": 111,
+        "description": "XXX Project Expenses",
         "signature": "signature_sample"
     }
 
-    url = "https://block-test9.onrender.com/transaction_pool/" 
+    url = "https://block-test8.onrender.com/transaction_pool/" 
     res = requests.post(url, json.dumps(transaction))
     print(res.json())
 
